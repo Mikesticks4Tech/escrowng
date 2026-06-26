@@ -35,7 +35,7 @@ exports.initializePayment = async (req, res) => {
         transactionId: transaction._id.toString(),
         buyerId: req.user.id,
       },
-      callback_url: `http://localhost:5173/payment/verify`,
+      callback_url: `https://escrowng.vercel.app/payment/verify`,
     });
 
     // Save reference to transaction
